@@ -14,8 +14,14 @@
     "dotenv": "^16.0.0",
     "express": "^4.17.1",
     "http-errors": "^2.0.0",
+<<<<<<< Updated upstream
     "mongoose": "^6.2.1",
     "joi": "^17.5.0",
+=======
+    "joi": "^17.6.0",
+    "moment": "^2.29.1",
+    "mongoose": "^6.2.1",
+>>>>>>> Stashed changes
     "morgan": "1.10.0",
     "uuid": "^8.3.2"
   },
