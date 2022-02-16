@@ -1,6 +1,5 @@
 const { Schema, model } = require('mongoose');
-const Joi = require("joi");
-
+const Joi = require('joi');
 
 const contactSchema = Schema({
   name: {
@@ -18,7 +17,7 @@ const contactSchema = Schema({
   },
   favorite: {
     type: Boolean,
-    default: false,
+    default: false
   }
 }, { versionKey: false, timestamps: true });
 
