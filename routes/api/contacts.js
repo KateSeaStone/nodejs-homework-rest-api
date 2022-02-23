@@ -2,6 +2,8 @@
 const express = require('express');
 const router = express.Router();
 
+const { authentication } = require('../../middlewares');
+
 const {
   addContact,
   deleteContact,
@@ -11,11 +13,11 @@ const {
   updateFavoriteContactById
 } = require('../../controllers/contacts');
 
-router.get('/', getAll);
+router.get('/', authentication, getAll);
 
 router.get('/:contactId', getContactById);
 
-router.post('/', addContact);
+router.post('/', authentication, addContact);
 
 router.put('/:contactId', updateContact);
 
